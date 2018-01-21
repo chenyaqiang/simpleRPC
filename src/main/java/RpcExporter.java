@@ -20,6 +20,9 @@ import java.util.concurrent.Executors;
  */
 public class RpcExporter {
 
+    /**
+     * TODO 线程池的创建非最佳
+     */
     static Executor executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 
     public static void exporter(String hostName, int port) throws Exception {
